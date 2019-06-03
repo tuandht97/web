@@ -12,20 +12,20 @@ const config = {
   chaincodePath: 'trit_chaincode',
   orderer0: {
     hostname: 'orderer0',
-    url: 'grpcs://34.87.116.245:7050',
+    url: 'grpcs://10.148.0.8:7050',
     pem: readCryptoFile('ordererOrg.pem')
   },
   realestateOrg: {
     peer: {
       hostname: 'realestate-peer',
-      url: 'grpcs://34.87.84.124:7051',
-      eventHubUrl: 'grpcs://34.87.84.124:7053',
+      url: 'grpcs://10.148.0.6:7051',
+      eventHubUrl: 'grpcs://10.148.0.6:7053',
       pem: readCryptoFile('realestateOrg.pem')
     },
     ca: {
       name: 'realestate-org',
       hostname: 'realestate-ca',
-      url: 'grpcs://34.87.84.124:7054',
+      url: 'grpcs://10.148.0.6:7054',
       mspId: 'RealEstateOrgMSP'
     },
     admin: {
@@ -36,14 +36,14 @@ const config = {
   regulatorOrg: {
     peer: {
       hostname: 'regulator-peer',
-      url: 'grpcs://34.87.89.73:10051',
-      eventHubUrl: 'grpcs://34.87.89.73:10053',
+      url: 'grpcs://10.148.0.7:10051',
+      eventHubUrl: 'grpcs://10.148.0.7:10053',
       pem: readCryptoFile('regulatorOrg.pem')
     },
     ca: {
       name: 'regulator-org',
       hostname: 'regulator-ca',
-      url: 'grpcs://34.87.89.73:10054',
+      url: 'grpcs://10.148.0.7:10054',
       mspId: 'RegulatorOrgMSP'
     },
     admin: {
@@ -54,14 +54,14 @@ const config = {
   traderOrg: {
     peer: {
       hostname: 'trader-peer',
-      url: 'grpcs://35.247.134.54:9051',
+      url: 'grpcs://10.148.0.5:9051',
       pem: readCryptoFile('traderOrg.pem'),
-      eventHubUrl: 'grpcs://35.247.134.54:9053',
+      eventHubUrl: 'grpcs://10.148.0.5:9053',
     },
     ca: {
       name: 'trader-org',
       hostname: 'trader-ca',
-      url: 'grpcs://35.247.134.54:9054',
+      url: 'grpcs://10.148.0.5:9054',
       mspId: 'TraderOrgMSP'
     },
     admin: {
